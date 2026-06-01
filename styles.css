@@ -11,7 +11,7 @@
     --radius-xl: 32px;
     --radius-lg: 24px;
     --radius-md: 18px;
-    --container: min(1180px, calc(100vw - 40px));
+    --container: min(1220px, calc(100vw - 48px));
 }
 
 * {
@@ -25,6 +25,8 @@ html {
 body {
     margin: 0;
     font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
     color: var(--text);
     background:
         radial-gradient(circle at top left, rgba(182, 123, 71, 0.18), transparent 30%),
@@ -57,9 +59,9 @@ a {
 
 .hero {
     width: var(--container);
-    margin: 24px auto 0;
+    margin: 20px auto 0;
     min-height: 100vh;
-    padding: 20px 0 72px;
+    padding: 16px 0 72px;
 }
 
 .topbar {
@@ -69,9 +71,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 16px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.55);
+    gap: 24px;
+    padding: 14px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
     border-radius: 999px;
     background: rgba(29, 21, 17, 0.7);
     color: #f7f1ea;
@@ -82,15 +84,16 @@ a {
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
 }
 
 .brand-logo {
-    width: 44px;
-    height: 44px;
-    border-radius: 14px;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
 }
 
 .brand-text {
@@ -100,8 +103,8 @@ a {
 }
 
 .brand-text strong {
-    font-size: 0.98rem;
-    letter-spacing: 0.06em;
+    font-size: 1.03rem;
+    letter-spacing: 0.045em;
     text-transform: uppercase;
 }
 
@@ -117,18 +120,18 @@ a {
 
 .brand-text small {
     color: rgba(247, 241, 234, 0.7);
-    font-size: 0.72rem;
+    font-size: 0.76rem;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 26px;
 }
 
 .nav-links a {
     position: relative;
-    font-size: 0.8rem;
+    font-size: 0.86rem;
     font-weight: 700;
 }
 
@@ -141,7 +144,7 @@ a {
 .kurumsal-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
+    gap: 22px;
 }
 
 .deger-list {
@@ -190,15 +193,15 @@ a {
 .hero-grid {
     display: grid;
     grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-    gap: 38px;
+    gap: 46px;
     align-items: center;
-    padding-top: 72px;
+    padding-top: 62px;
 }
 
 .eyebrow {
     margin: 0 0 16px;
     color: var(--accent-dark);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 800;
 }
 
@@ -212,15 +215,19 @@ h3 {
 
 h1 {
     max-width: 11ch;
-    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-size: clamp(2.7rem, 6.1vw, 5rem);
+    letter-spacing: -0.012em;
+    line-height: 1.02;
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-size: clamp(1.8rem, 3.4vw, 3rem);
+    line-height: 1.08;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.28rem;
+    line-height: 1.16;
 }
 
 .lead,
@@ -233,31 +240,33 @@ h3 {
 .swatch p,
 .hero-stats dd {
     color: var(--text-soft);
-    font-size: 1.02rem;
-    line-height: 1.75;
+    font-size: 1rem;
+    line-height: 1.68;
 }
 
 .lead {
     max-width: 60ch;
-    margin: 24px 0 0;
+    margin: 20px 0 0;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 32px;
+    margin-top: 28px;
 }
 
 .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 52px;
-    padding: 0 22px;
+    min-height: 50px;
+    padding: 0 24px;
     border-radius: 999px;
     border: 1px solid transparent;
     font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
     transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
@@ -291,8 +300,8 @@ h3 {
 .hero-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-    margin: 34px 0 0;
+    gap: 12px;
+    margin: 30px 0 0;
 }
 
 .hero-stats div,
@@ -304,22 +313,22 @@ h3 {
 }
 
 .hero-stats div {
-    padding: 20px;
+    padding: 18px;
     border-radius: var(--radius-md);
     background: rgba(255, 250, 245, 0.68);
 }
 
 .hero-stats dt {
-    font-size: 0.82rem;
+    font-size: 0.76rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
 .hero-stats dd {
-    margin: 10px 0 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    margin: 8px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
 }
 
 .hero-visual {
@@ -330,7 +339,7 @@ h3 {
 
 .panel {
     position: relative;
-    padding: 28px;
+    padding: 30px;
     border-radius: var(--radius-lg);
     background: var(--surface);
 }
@@ -345,7 +354,7 @@ h3 {
 }
 
 .panel-large {
-    min-height: 300px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -369,12 +378,12 @@ h3 {
 .panel-label {
     display: inline-flex;
     width: fit-content;
-    margin-bottom: 18px;
-    padding: 8px 12px;
+    margin-bottom: 14px;
+    padding: 7px 12px;
     border-radius: 999px;
     background: rgba(255, 246, 238, 0.14);
     color: #fbf4ef;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 800;
 }
 
@@ -385,7 +394,7 @@ h3 {
 }
 
 .panel-large p {
-    margin-top: 14px;
+    margin-top: 12px;
 }
 
 .swatch-column {
@@ -395,7 +404,7 @@ h3 {
 }
 
 .swatch {
-    min-height: 210px;
+    min-height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -418,7 +427,7 @@ h3 {
 }
 
 .swatch strong {
-    font-size: 1.08rem;
+    font-size: 1.02rem;
 }
 
 .swatch-cinnamon {
@@ -448,14 +457,14 @@ h3 {
 .section {
     width: var(--container);
     margin: 0 auto;
-    padding: 44px 0 88px;
+    padding: 58px 0 94px;
 }
 
 .section-heading {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 12px;
-    margin-bottom: 28px;
+    margin-bottom: 34px;
 }
 
 .intro {
@@ -619,9 +628,9 @@ h3 {
 
 .contact-card {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
-    gap: 28px;
-    padding: 34px;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 34px;
+    padding: 38px;
     border-radius: var(--radius-xl);
     background:
         radial-gradient(circle at top right, rgba(199, 109, 58, 0.22), transparent 24%),
@@ -651,17 +660,18 @@ h3 {
 }
 
 .contact-details a {
-    font-size: 1.15rem;
+    font-size: 1.08rem;
     font-weight: 700;
 }
 
 .contact-details .contact-email {
     width: fit-content;
-    padding: 0.62rem 0.9rem;
+    padding: 0.66rem 0.96rem;
     border-radius: 12px;
     border: 1px solid rgba(243, 199, 156, 0.55);
     background: rgba(243, 199, 156, 0.14);
-    color: #f8f1eb;
+    color: #fff8f0;
+    font-size: 1.1rem;
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
 }
 
@@ -698,7 +708,8 @@ h3 {
     justify-content: space-between;
     gap: 16px;
     color: var(--text-soft);
-    font-size: 0.94rem;
+    font-size: 0.88rem;
+    letter-spacing: 0.01em;
 }
 
 .reveal {
@@ -735,6 +746,11 @@ h3 {
 
     .swatch-column {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .topbar {
+        padding: 12px 16px;
+        border-radius: 22px;
     }
 
 }
@@ -785,6 +801,11 @@ h3 {
     .footer {
         padding-bottom: 40px;
     }
+
+    .brand-logo {
+        width: 44px;
+        height: 44px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -818,11 +839,11 @@ h3 {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.45rem;
     }
 
     h2 {
-        font-size: 2.1rem;
+        font-size: 1.85rem;
     }
 
     .button {
