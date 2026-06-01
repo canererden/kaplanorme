@@ -1,6 +1,6 @@
 # Kaplan Orme Website
 
-Bu proje, Kaplan Orme icin hazirlanan GitHub Pages uyumlu statik tekstil web sitesidir.
+Bu repo, Kaplan Orme icin hazirlanan ve GitHub Pages uzerinden yayinlanan statik kurumsal tekstil web sitesidir.
 
 ## Dosya Yapisi
 
@@ -22,12 +22,15 @@ Ardindan tarayicida http://localhost:8080 adresini acin.
 
 ## GitHub Pages Baglama
 
-1. Bu klasoru bir GitHub reposuna gonderin.
-2. GitHub repository ayarlarinda Pages bolumunu acin.
-3. Deploy from a branch secin.
-4. Branch olarak main, klasor olarak root secin.
-5. DNS tarafinda kaplanorme.com icin GitHub Pages kayitlarini tanimlayin.
-6. CNAME dosyasi sayesinde ozel alan adi korunur.
+Bu proje su adreste tutulur:
+
+- Repo: https://github.com/canererden/kaplanorme
+
+GitHub Pages ayarlari:
+
+- Branch: main
+- Folder: /(root)
+- Custom domain: kaplanorme.com
 
 ## IHS DNS Kayitlari
 
@@ -37,10 +40,15 @@ Alan adini IHS panelinden GitHub Pages'e yonlendirmek icin genel olarak su kayit
 - A kaydi: 185.199.109.153
 - A kaydi: 185.199.110.153
 - A kaydi: 185.199.111.153
-- www icin CNAME: kullaniciadi.github.io
+- www icin CNAME: canererden.github.io
 
-Not: `kullaniciadi.github.io` kismini kendi GitHub kullanici ya da organizasyon adresinizle degistirin.
+## Yayin Kontrolu
+
+- GitHub Pages kaynak adresi: https://canererden.github.io/kaplanorme/
+- Ozel alan adi: http://kaplanorme.com/
+- `CNAME` dosyasi repo icinde tutulur.
+- `.nojekyll` dosyasi root dizinde tutulur.
 
 ## Not
 
-Bu ilk kurulumda iletisim bilgileri taslak olarak birakildi. Yayina almadan once gercek telefon, e-posta ve adres bilgilerini guncelleyin.
+DNS yayilimi tamamlanmadan ozel alan adinda gecici erisim veya SSL gecikmesi gorulebilir. GitHub sertifikasi olustuktan sonra HTTPS zorlamasi acilabilir.
