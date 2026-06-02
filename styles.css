@@ -84,31 +84,21 @@ a {
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 0;
 }
 
 .brand-logo {
-    width: 52px;
-    height: 52px;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+    width: 176px;
+    height: 58px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    object-fit: contain;
+    object-position: center;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
-.brand-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.brand-text strong {
-    font-size: 1.03rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-.brand-text small,
 .nav-links a,
 .eyebrow,
 .panel-label,
@@ -116,11 +106,6 @@ a {
 .timeline-item span {
     letter-spacing: 0.08em;
     text-transform: uppercase;
-}
-
-.brand-text small {
-    color: rgba(247, 241, 234, 0.7);
-    font-size: 0.76rem;
 }
 
 .nav-links {
@@ -835,8 +820,9 @@ h3 {
     }
 
     .brand-logo {
-        width: 44px;
-        height: 44px;
+        width: 140px;
+        height: 46px;
+        padding: 3px 8px;
     }
 }
 
